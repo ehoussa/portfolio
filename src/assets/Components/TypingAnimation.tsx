@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Box, Center, Text, Flex } from '@chakra-ui/react';
+import { Box, Center, Text } from '@chakra-ui/react';
+
 
 const TypingAnimation = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -60,32 +61,36 @@ const TypingAnimation = () => {
     return () => clearInterval(interval);
   }, [currentCharIndex, currentTextIndex, isPaused, isDeleting, texts]);
 
-  
-
   return (
     <>
-        <Center display="flex" justifyContent="center" alignItems="center">
-        <Text fontFamily="Roboto" fontSize='4xl'>Hi</Text>
-
-        </Center>
-        <Center display="flex" justifyContent="center" alignItems="center">
-            <Box
-              m={0.5}
-              h="50px"
-            >
-                <Text fontFamily="Roboto" fontSize='4xl'>{genText}</Text>
-            </Box>
-            <Box
-              w="5px"
-            >
-                {isVisible && (<Box
-                  bg="red"
+        <Box>
+            <Center display="flex" justifyContent="center" alignItems="center">
+                <Text fontFamily="Roboto" fontSize='4xl' color="white">Hi</Text>
+            </Center>
+            <Center display="flex" justifyContent="center" alignItems="center">
+                <Box
                   m={0.5}
-                  w="5px"
                   h="50px"
-                />)}
-            </Box>
-        </Center>
+                >
+                    <Text fontFamily="Roboto" fontSize='4xl' color="#FEDA14">{genText}</Text>
+                </Box>
+                <Box
+                  w="5px"
+                >
+                    {isVisible && (<Box
+                      bg="red"
+                      m={0.5}
+                      w="5px"
+                      h="50px"
+                    />)}
+                </Box>
+            </Center>
+            <Center >
+                <Text textAlign="center" color="#D3D3D3">
+                    Welcome to my portfolio website! I am a passionate Full Stack Developer with a knack for creating dynamic and user-friendly web applications.<br/>CenterExplore my work and feel free to get in touch.
+                </Text>
+            </Center>
+        </Box>
     </>
   );
 };

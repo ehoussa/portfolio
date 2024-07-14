@@ -14,7 +14,7 @@ const BaseNavBar = () => {
 
   return (
     <>
-    <Box bg='tomato' w='100%' p={4} color='white'>
+    <Box w='100%' p={4} color='white'>
     <Button variant="link" onClick={toggleMenu}>
             <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center">
               <MotionBox
