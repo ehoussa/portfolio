@@ -20,6 +20,9 @@ function App() {
       };
   }, []);
 
+  console.log("width", dimensions.width);
+  console.log("height", dimensions.height);
+
   return (
     <>
       <Box className={styles.background} h={dimensions.height} w={dimensions.width}>

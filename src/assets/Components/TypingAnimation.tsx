@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Box, Center, Text } from '@chakra-ui/react';
+import { useState, useEffect, useRef } from 'react';
+import { Box, Center, Flex, Text } from '@chakra-ui/react';
 
 
 const TypingAnimation = () => {
@@ -64,30 +64,19 @@ const TypingAnimation = () => {
   return (
     <>
         <Box>
-            <Center display="flex" justifyContent="center" alignItems="center">
-                <Text fontFamily="Roboto" fontSize='4xl' color="white">Hi</Text>
+            <Center justifyContent="center" alignItems="center">
+                <Text marginLeft="10px" marginRight="10px" fontFamily="Roboto" fontSize='3xl' color="white">Hi</Text>
             </Center>
-            <Center display="flex" justifyContent="center" alignItems="center">
-                <Box
-                  m={0.5}
-                  h="50px"
-                >
-                    <Text fontFamily="Roboto" fontSize='4xl' color="#FEDA14">{genText}</Text>
-                </Box>
-                <Box
-                  w="5px"
-                >
-                    {isVisible && (<Box
-                      bg="red"
-                      m={0.5}
-                      w="5px"
-                      h="50px"
-                    />)}
-                </Box>
+            <Center>
+            <Box textAlign="center">
+                <Flex justifyContent="center" alignItems="center">
+                  <Text marginLeft="10px" marginRight="10px" fontSize="3xl" color="#00A86B">{genText}{isVisible && "|"}</Text>
+                </Flex>
+            </Box>
             </Center>
             <Center >
-                <Text textAlign="center" color="#D3D3D3">
-                    Welcome to my portfolio website! I am a passionate Full Stack Developer with a knack for creating dynamic and user-friendly web applications.<br/>CenterExplore my work and feel free to get in touch.
+                <Text textAlign="center" color="#D3D3D3" marginLeft="50px" marginRight="50px">
+                    I'm a passionate Full Stack Developer with expertise in building dynamic and responsive web applications.
                 </Text>
             </Center>
         </Box>

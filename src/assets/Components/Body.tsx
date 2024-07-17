@@ -12,13 +12,13 @@ const Body = () => {
 
   return (
     <>
-        <Center marginTop="200px" marginBottom="40px">
+        <Center marginTop="70px" marginBottom="40px">
           <Box position="relative" width="200px" height="200px">
             <MotionBox
               width="100%"
               height="100%"
               borderRadius="50%"
-              bg="linear-gradient(90deg, #FEDA14 0%, #0B1E33 100%)"
+              bg="linear-gradient(90deg, #00A86B 0%, #0B1E33 100%)"
               display="flex"
               justifyContent="center"
               alignItems="center"
@@ -26,7 +26,7 @@ const Body = () => {
               transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
             />
             <Image
-              src="https://via.placeholder.com/80"
+              src="https://cdn.intra.42.fr/users/030ff0887fa9da4a18460f7014d15f86/ebakchic.jpg"
               alt="Overlay Image"
               borderRadius="50%"
               boxSize="170px"
@@ -43,7 +43,7 @@ const Body = () => {
                 <Circle size='40px' color='#D3D3D3'>
                     <IconButton
                         variant='outline'
-                        _hover={{ bg: '#FEDA14', color: '#263571' }}
+                        _hover={{ bg: '#00A86B', color: '#ffffff' }}
                         colorScheme='white'
                         aria-label='Linkedin'
                         icon={<FaGithub fontSize="20px"/>}
@@ -52,7 +52,7 @@ const Body = () => {
                 <Circle size='40px' color='#D3D3D3'>
                     <IconButton
                         variant='outline'
-                        _hover={{ bg: '#FEDA14', color: '#263571' }}
+                        _hover={{ bg: '#00A86B', color: '#ffffff' }}
                         colorScheme='white'
                         aria-label='Linkedin'
                         icon={<FaLinkedin fontSize="20px"/>}
@@ -62,9 +62,13 @@ const Body = () => {
         </Center>
         <Center>
             <Button leftIcon={<MdOutlineArrowCircleDown fontSize="20px"/>}
+                position="absolute"
+                bottom="4"
+                left="50%"
+                transform="translateX(-50%)"
                 color="#D3D3D3"
-                variant="ghost"
-                _hover={{ bg: 'rgba(0, 0, 0, 0)', color: '#FEDA14' }}
+                variant="link"
+                _hover={{ color: '#00A86B' }}
                 transition="background-color 0.3s ease"
              >SCROLL DOWN</Button>
         </Center>

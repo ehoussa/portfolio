@@ -46,8 +46,8 @@ const BaseNavBar = () => {
     </Box>
     <AnimatePresence>
     {isMenuOpen && (<MotionBox
-          bg='tomato'
-          w='70%'
+          // bg='tomato'
+          w='100%'
           h='100vh'
           p={4}
           color='white'
@@ -63,21 +63,21 @@ const BaseNavBar = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <Text>HOME</Text>
+            <Text color="#00A86B">HOME</Text>
           </MotionText>
           <MotionText
             initial={{ opacity: 0, x: '-100vw' }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <Text>HOME2</Text>
+            <Text color="#00A86B">HOME2</Text>
           </MotionText>
           <MotionText
             initial={{ opacity: 0, x: '-100vw' }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9 }}
           >
-            <Text>HOME3</Text>
+            <Text color="#00A86B">HOME3</Text>
           </MotionText>
         </VStack>
       </Center>
