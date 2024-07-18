@@ -65,7 +65,7 @@ const TypingAnimation = () => {
     <>
         <Box>
             <Center justifyContent="center" alignItems="center">
-                <Text marginLeft="10px" marginRight="10px" fontFamily="Roboto" fontSize='3xl' color="white">Hi</Text>
+                <Text marginLeft="10px" marginRight="10px" fontSize='3xl' color="white">Hi</Text>
             </Center>
             <Center>
             <Box textAlign="center">
